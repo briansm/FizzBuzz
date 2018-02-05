@@ -1,7 +1,16 @@
 var numeros=100;
 //ciclo que imprimen numeros del 1 al 100
 for(var i=1;i<=numeros;i++){
-  document.write(i+"<br/>");
+  if(esdiv(i,3)){
+    document.write("Fizz");
+  }
+  if(esdiv(i,5)){
+    document.write("Buzz");
+  }
+  if(!esdiv(i,3)&&!esdiv(i,5)){
+    document.write(i);
+  }
+  document.write("<br/>");
 }
 
 //Funcion que comprueba si es divisible
